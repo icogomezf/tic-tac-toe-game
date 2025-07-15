@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: rgb(148, 167, 159);
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(60, 255, 0, 0.545),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("./img/ttt.png");
+}
+
+#titulo {
+  border-radius: 5px;
+  background-color: #bed5a6;
+}
+
+#jugadores {
+  padding-top: 12px;
+}
+
+.card {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url("./img/ttt.png");
+}
+
+.container {
+  max-width: 650px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bi {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  gap: 2px;
+  width: 80%;
+  height: 30%;
+  margin: auto;
+}
+
+.grid-item {
+  width: 95%;
+  height: 95%;
+  background-color: #d2c998;
+  /* background-image: url("./img/ttt.png"); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-color: #d2c998;
+  border-radius: 7px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 0 1px #9e9c9a, -1px 0 8px 0 rgba(34, 33, 81, 0.01),
+    10px 8px 8px 0 rgba(34, 33, 81, 0.25);
+}
+
+.grid-item:hover {
+  transform: translate3d(5px, 5px, 0px);
+  box-shadow: none;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+.box {
+  padding-bottom: 10px;
+}
+
+button {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 25px;
+  background-color: rgb(227, 229, 213);
+  padding: 0.31rem 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer .redes {
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 15px;
+  padding: 15px 0 0 0;
+  line-height: 30px;
+  margin: 10px 0 30px 50px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+footer .redes a {
+  color: #081c6c;
+  padding: 5px;
+}
+
+footer .redes a:hover {
+  color: #c8690ada;
+}
+
+footer .info {
+  color: #000;
+  float: right;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+footer .info ul {
+  margin-top: 8px;
+}
+
+footer .info ul li {
+  list-style: none;
+  padding: 2px;
+}
+footer .info i {
+  text-decoration: none;
+  color: #081c6c;
+}
+
+footer .info a {
+  text-decoration: none;
+  color: #000;
+}
+footer .info a:hover {
+  color: #c8690ada;
+}
